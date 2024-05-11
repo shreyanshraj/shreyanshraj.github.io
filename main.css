@@ -18,16 +18,19 @@ ul{
     
 }
 
-li{
+li a{
     float: left;
     /* text-align: right; */
     padding-left: 1em;
-    /* color: white; */
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    display: block;
 }
 
 #list_nav{
     padding-top: 1em;
-    align-items: normal;
+    text-align: end;
 }
 
 .container{
