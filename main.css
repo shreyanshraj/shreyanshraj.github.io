@@ -1,0 +1,44 @@
+html{
+ background-color: rgb(241, 238, 228);   
+}
+
+img{
+    width: 5em;
+    height: 5em;
+    float: left;
+    /* border: 0.5px solid black; */
+    /* padding-left: 1em; */
+    padding: .5em;
+}
+
+ul{
+    list-style-type: none;
+    overflow: hidden;
+    /* background-color: #333333; */
+    
+}
+
+li{
+    float: left;
+    /* text-align: right; */
+    padding-left: 1em;
+    /* color: white; */
+}
+
+#list_nav{
+    padding-top: 1em;
+    align-items: normal;
+}
+
+.container{
+ background-color: #474545;
+ margin-bottom: .5em; 
+ max-width: 100%;  
+}
+
+#bt{
+    padding-left: .5em;
+    padding-top: .5em;
+
+}
+
