@@ -1,20 +1,25 @@
-html{
- background-color: rgb(241, 238, 228);   
+body{
+ background-color: white;   
+ color: black;
+transition: background .5s;
 }
 
-img{
+
+.pp_img{
     width: 5em;
     height: 5em;
     float: left;
-    /* border: 0.5px solid black; */
-    /* padding-left: 1em; */
     padding: .5em;
+    border-radius: 5em;
+    position: absolute;
 }
 
 ul{
     list-style-type: none;
     overflow: hidden;
     /* background-color: #333333; */
+    /* width: auto; */
+    
     
 }
 
@@ -25,18 +30,18 @@ li a{
     color: white;
     font-size: 1.2em;
     text-decoration: none;
-    display: block;
+    /* display: block; */
+    /* width: fit-content; */
+    margin-right: 1em;
 }
+
 
 #list_nav{
-    padding-top: 1em;
-    text-align: end;
-}
-
-.container{
- background-color: #474545;
- margin-bottom: .5em; 
- max-width: 100%;  
+    padding-top: .8em;
+    background-color: black;
+    height: fit-content;
+    margin-top: .5em;
+    border-radius: 1em;
 }
 
 #bt{
@@ -45,3 +50,101 @@ li a{
 
 }
 
+.dark-mode {
+    background-color: rgb(56, 54, 54);
+    color: white;
+    transition: background .5s;
+}
+
+.dk_btn{
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    top: 0;
+    right: 0vw;
+}
+
+
+
+#intro {
+    background-color: rgba(169, 157, 94, 0.173);
+}
+
+#intro_title, #pro_title,#ts_title{
+    font-size: 1.5em;
+    font-style: arial;
+    text-align: center;
+}
+
+#git_img{
+    height: 10em;
+    width: 10em;
+}
+
+#git_img{
+   text-align: center;
+   width: 100%;
+   text-decoration: none;
+}
+
+.card {
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+    padding: 2%;
+    margin-left: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+    max-width: 250px;
+    /* height: 12em; */
+    /* background-image: url(/images/proj_image.jpg);
+    background-size: cover; */
+}
+
+
+.card-title {
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin: 1em; */
+    color: black;
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+.cont{
+    display: inline-block;
+}
+
+#project{
+    background-color: aliceblue;
+}
+
+#lang-text{
+    margin-bottom: 0.2em;
+    margin-top: 1.2em;
+}
+
+#proj_btn{
+    margin-bottom: 1em;
+}
+
+.card-img{
+    margin-top: 1em;
+}
+
+#proj_brief{
+    text-align: center;
+    /* border: 1px solid black; */
+    margin: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#proj_btn:hover{
+    background-color: rgb(67, 156, 230);
+    transition: .3s;
+    color: black;
+    font-size: 1.3em;
+}
+
+.row{
+    /* align-items: center; */
+}
