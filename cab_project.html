@@ -1,77 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<!-- things to work on or improve 
+ 1. add individual graph images next to vis design div
+ 2. add background image or pattern to the whole page-->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Navigation Bar</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #333;
-            padding: 10px 20px;
-        }
-
-        .navbar img {
-            height: 40px;
-            width: 40px;
-            border-radius: 50%;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-        }
-
-        .navbar-center {
-            display: flex;
-            justify-content: center;
-            flex-grow: 1;
-        }
-    </style>
+    <meta charset="utf-8">
+    <title>Cab trajectory visualisation | SR</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="cab_trajectory.css">
+    <script src="" async defer></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" /> -->
 </head>
 
 <body>
-    <div class="navbar">
-        <img src="profile-image.jpg" alt="Profile Image" class="profile-image">
-        <div class="navbar-center">
-            <a href="#section1">Section 1</a>
-            <a href="#section2">Section 2</a>
-            <a href="#section3">Section 3</a>
-            <a href="#section4">Section 4</a>
+    <div id="header">
+        <div id="head_img">
+            <h2 id="head_text">Cab trajectory visualization for Chicago</h2>
+            <!-- <img src="/images/unempl_image_header.jpg" alt="" class="p_img_header"> -->
+            <div class="img1"><img src="/images/proj_image.jpg" alt="" class="p_img_header"></div>
+            <div class="proj_text">
+                <!-- start of intro section -->
+                <div class="two_col_lay">
+                    <div>
+                        <p class="subtitle">Introduction</p>
+                        <p>Visualizing the paths taken by taxis is crucial for managing traffic flow efficiently in
+                            modern cities. This visualisation
+                            provides city policymakers and cab operators with insights into traffic patterns and popular
+                            routes, enabling informed
+                            decisions that optimize both business operations and urban infrastructure.</p>
+                    </div>
+
+                    <div>
+                        <p class="subtitle">Visualisation Design</p>
+                        <p>The visualisation board has been thoughtfully structured into a grid layout, precisely
+                            divided into three columns and
+                            three rows. This layout accommodates a total of seven distinct graphs, each offering unique
+                            insights into the taxi data.
+                            The uniform and symmetrical arrangement of these graphs ensures a cohesive and visually
+                            pleasing presentation, allowing
+                            users to easily navigate and interpret the diverse visualisations provided. <br>
+                            By organising
+                            the graphs in a structured
+                            grid, the landing page optimises the use of space and facilitates efficient data exploration
+                            for users. The seven
+                            visualisations included in this layout provide comprehensive information about various
+                            aspects of the taxi data, ranging
+                            from spatial distributions to temporal patterns and ride characteristics.</p>
+                    </div>
+                    <div>
+                        <p class="subtitle">Working of Visualization</p>
+                        <p>Topic Bar Graph<br>
+                            At the core of our visual analytics tool lies the Topic Bar Graph, meticulously designed to
+                            reveal the most frequently
+                            traveled roads based on taxi trajectories. Powered by D3.js, this interactive bar chart
+                            dynamically represents road
+                            frequencies extracted from pre-filtered taxi trip data. It processes trip details, extracts
+                            road names using the Google
+                            Maps Directions API, calculates frequency statistics, and visually displays the top ten most
+                            traveled roads. Users can
+                            interact with the graph to gain instant insights into road usage patterns critical for
+                            traffic management and
+                            operational strategies.
+                        </p>
+                        <br>
+                        <p>Radial Heat Map and Bar Chart </p>
+                        <p>Another essential component, the Radial Heat Map and Bar Chart, visualizes taxi ride
+                            characteristics such as speed and
+                            duration across different times of the day. Leveraging D3.js's arc functionalities, this
+                            dual visualization uses
+                            concentric circles to depict speed intervals and a circular bar chart for ride counts per
+                            three-hour intervals.
+                            Interactive controls allow users to specify time frames, updating the display dynamically to
+                            highlight relevant data
+                            segments. Smooth transitions enhance user engagement, ensuring a seamless exploration
+                            experience across various temporal
+                            contexts.
+                        </p>
+                        <br>
+                        List View
+                        <p>
+                            Complementing graphical representations, the List View offers a detailed tabular summary of
+                            taxi rides within selected
+                            intervals. Organized in a structured format, it provides essential trip details including
+                            pickup/drop-off locations,
+                            timestamps, and ride counts. This tabular display enables in-depth analysis alongside visual
+                            insights, facilitating a
+                            comprehensive understanding of the taxi dataset.
+                        </p>
+                        <br>
+                        Control Panel
+                        <p>
+                            Central to user interaction, the Control Panel empowers users with flexible data
+                            filtering
+                            capabilities. Through
+                            dropdown menus and calendar interfaces, users can define specific start/end dates and time
+                            intervals, synchronizing data
+                            updates across all visualizations. The slider feature extends functionality by projecting
+                            future trends based on
+                            historical data, offering predictive insights crucial for planning and operational
+                            decision-making.
+                        </p>
+                    </div>
+                    <div class="images of graph">
+                        <!-- to add individual images of the graphs -->
+
+                    </div>
+                    <div>
+                        <p class="subtitle">Practical application</p>
+                        <p>The visualization tool holds immense practical value in urban planning and taxi service
+                            optimization. <br>
+                            By uncovering
+                            traffic patterns, congestion hotspots, and popular pickup/drop-off locations, it equips
+                            stakeholders with actionable
+                            insights to streamline operations, reduce fuel consumption, and enhance service efficiency.
+                            <br>
+                            Predictive capabilities
+                            further bolster decision-making, enabling proactive strategies in response to changing urban
+                            dynamics.
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="subtitle">Conclusion</p>
+                        <p>In summary, visualizing taxi trajectories empowers stakeholders with critical insights for
+                            managing urban transportation
+                            effectively. By leveraging advanced visualization techniques and interactive
+                            functionalities, this tool not only
+                            enhances understanding of taxi behavior but also supports the development of smarter, more
+                            efficient urban environments.
+                            As cities evolve, such tools play a crucial role in shaping sustainable and responsive
+                            transportation systems.
+                        </p>
+
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- end of Introduction section -->
+
+                <p style="text-decoration: underline;">Links for Dataset used:</p>
+                <ul>
+                    <li>
+                        <a href="https://www.kaggle.com/datasets/tunguz/us-estimated-crimes" class="links">US Estimated
+                            Crimes</a>
+                    </li>
+                    <li>
+                        <a href="https://www.kaggle.com/datasets/justin2028/unemployment-in-america-per-us-state"
+                            class="links">Unemployment
+                            in America, Per US State</a>
+                    </li>
+                    <li>
+                        <a href="https://www2.census.gov/geo/tiger/GENZ2014/shp/" class="links">US Geojson data</a>
+                    </li>
+                </ul>
+                <br>
+                <div id="api">
+                    <p>List of APIs used:</p>
+                </div>
+                <br>
+                <p style="font-size: 0.9em; margin-bottom: .6em;">Language and libraries used:</p>
+
+                <a href="https://d3js.org/">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                        viewBox="-10 -10 116 111">
+                        <path fill="black"
+                            d="M0,0h7.75a45.5,45.5 0 1 1 0,91h-7.75v-20h7.75a25.5,25.5 0 1 0 0,-51h-7.75zm36.2510,0h32a27.75,27.75 0 0 1 21.331,45.5a27.75,27.75 0 0 1 -21.331,45.5h-32a53.6895,53.6895 0 0 0 18.7464,-20h13.2526a7.75,7.75 0 1 0 0,-15.5h-7.75a53.6895,53.6895 0 0 0 0,-20h7.75a7.75,7.75 0 1 0 0,-15.5h-13.2526a53.6895,53.6895 0 0 0 -18.7464,-20z" />
+                    </svg>
+                </a>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="html-5"
+                    srcset="" height="40" width="40" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="css-3" srcset=""
+                    height="35" width="40" />
+
+                <div id="proj_links">
+                    <!-- include final vis interaction gif and github link-->
+                    <button type="button" class="">
+                        <a href="https://github.com/asu-cse578-s2024/Aditya-Dhruv-Omkar-Satya-Shreyansh"
+                            style="text-decoration: none; color: black;">View project on
+                            Github</a>
+                    </button>
+                    <br>
+                    <p style="text-decoration: underline; ">Project Demo Video</p>
+                    <iframe src="https://www.youtube.com/embed/ns7qlgG7kOY"
+                        title="Visual analytics of taxi trajectory data via topical sub-trajectories" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        style="margin-bottom: 1em;width: 40vw; height: 40vh;" allowfullscreen></iframe>
+                </div>
+            </div>
+
+
+
         </div>
-        <img src="dark-icon.png" alt="Dark Icon" class="dark-icon">
+
+
     </div>
-
-    <p id="lang-text">Demo Video</p>
-    <a href="https://youtu.be/ns7qlgG7kOY ">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="Youtube Video link"
-            srcset="" height="20" width="80">
-    </a>
-    <p id="lang-text">Language and Libraries used</p>
-    <div id="lang-logo">
-        <a href="https://d3js.org/">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="-10 -10 116 111">
-                <path fill="black"
-                    d="M0,0h7.75a45.5,45.5 0 1 1 0,91h-7.75v-20h7.75a25.5,25.5 0 1 0 0,-51h-7.75zm36.2510,0h32a27.75,27.75 0 0 1 21.331,45.5a27.75,27.75 0 0 1 -21.331,45.5h-32a53.6895,53.6895 0 0 0 18.7464,-20h13.2526a7.75,7.75 0 1 0 0,-15.5h-7.75a53.6895,53.6895 0 0 0 0,-20h7.75a7.75,7.75 0 1 0 0,-15.5h-13.2526a53.6895,53.6895 0 0 0 -18.7464,-20z" />
-            </svg>
-        </a>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="html-5"
-            srcset="" height="40" width="40" />
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="css-3" srcset="" height="35"
-            width="40" />
-
 
 </body>
 
 </html>
+
+
+<!-- <iframe style="border-radius:12px"
+    src="https://open.spotify.com/embed/track/3BUKPSbAh41Sl9jOl5mLMm?utm_source=generator&theme=0" width="40%"
+    height="300px" frameBorder="0" allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->

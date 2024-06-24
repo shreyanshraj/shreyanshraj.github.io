@@ -1,0 +1,119 @@
+html {
+    background-color: rgb(246, 247, 248);
+    /* padding-left: 1em;
+    padding-right: 1em; */
+    /* background-image: url(/images/background_pattern.jpg); */
+    /* opacity: 0.1; */
+}
+
+#header {
+    /* background-color: black; */
+    /* background-image: url('/images/unempl_image_header.jpg');
+    background-repeat: no-repeat    ;
+    /* opacity: 0.5; */
+    /* height: 43em;
+    width: auto; */
+    /* background-blend-mode: lighten;
+    background-size: cover;  */
+    /* height: 100vh;
+    margin-bottom: 2em;
+    margin-top: 2em; */
+    /* background-image: url(/images/background_pattern.jpg);
+        opacity: 0.1; */
+}
+
+#head_text {
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-bottom: -1em;
+    /* color: white; */
+    text-decoration: underline;
+    margin-top: 1em;
+    padding-bottom: 1.5em;
+}
+
+
+.p_img_header {
+    width: 80;
+    scale: 0.8;
+    height: 80vh;
+    margin: -3em;
+    /* margin-left: 15vw; */
+   
+}
+
+.img1{
+    display: grid;
+    place-items: center;
+}
+
+.proj_text {
+    font-family: 'Arial';
+    /* font-family: "Mukta", sans-serif; */
+    /* width: 60vw; */
+    text-align: left;
+    margin-left: 10vw;
+    font-size: 1.1em;
+    word-spacing: 0.4em;
+    margin-bottom: 2em;
+    line-height: 1.3em;
+}
+
+.links {
+    text-decoration: none;
+    /* color: black; */
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: rgb(220, 234, 240);
+    color: black;
+    font-size: 1em;
+    padding: .9em;
+    margin-top: 1.2em;
+    align-items: center;
+    border-radius: .9em;
+    margin-bottom: 2em;
+    transition: .3s;
+    /* margin-left: 1em; */
+}
+
+button:hover {
+    background-color: rgb(154, 207, 230);
+    color: black;
+    font-size: 1em;
+    padding: .9em;
+    margin-top: 1.2em;
+    align-items: center;
+    transition: .3s;
+    border-radius: 3em;
+    margin-bottom: 2em;
+
+}
+
+.two_col_lay{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5em 3em;
+    width: 80vw;
+}
+
+@media (max-width: 768px){
+    .two_col_lay{
+        grid-template-columns: 1fr;
+    }
+
+    .img1{
+        scale: .6;
+    }
+}
+
+.subtitle{
+    font-weight: bold;
+    font-size: 1.3em;
+}
