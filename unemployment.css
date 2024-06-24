@@ -1,0 +1,51 @@
+html{
+    background-color: rgb(246, 247, 248);
+    /* padding-left: 1em;
+    padding-right: 1em; */
+}
+
+#header{
+    /* background-color: black; */
+    /* background-image: url('/images/unempl_image_header.jpg');
+    background-repeat: no-repeat    ;
+    /* opacity: 0.5; */
+    /* height: 43em;
+    width: auto; */
+    /* background-blend-mode: lighten;
+    background-size: cover;  */
+
+}
+
+#head_text{
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-bottom: -1em;
+    /* color: white; */
+    text-decoration: underline;
+}
+
+
+.p_img_header{
+    width: 100vw; 
+    scale: 0.7;
+    height: 99vh;
+    margin: -3em;
+}
+
+.proj_text{
+    font-family: 'Arial';
+    width: 60vw;
+    text-align: left;
+    margin-left: 15vw;
+    font-size: 1.4em;
+    word-spacing: 0.4em;
+    margin-bottom: 2em;
+    line-height: 1.3em;
+}
+
+a{
+    text-decoration: none;
+    /* color: black; */
+}
