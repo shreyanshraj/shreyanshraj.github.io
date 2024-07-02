@@ -26,7 +26,7 @@
             <div id="list_nav" class="col-4">
                 <ul>
                     <li><a href="/main.html" target="" rel=" ">Home</a></li>
-                    <li><a href="/cab_project.html" target="" rel=" ">Project</a></li>
+                    <li><a href="#project" target="" rel=" ">Project</a></li>
                     <li><a href="/docs/Internship resume.pdf" target="" rel=" ">Resume</a></li>
                     <li><a href="/contact.html" target="" rel=" ">Contact</a> </li>
                 </ul>
@@ -41,22 +41,24 @@
     </section>
 
     <section id="intro">
-        <!-- <p id="intro_title">placeholder for intro </p> -->
-        <!-- add an image with background and 2-3 lines intro -->
         <br>
         <div id="intro-back">
-            <div id="intro-img">
-
+            <div class="row">
+                <div id="intro-img" class="col-3">
+                    <img src="/images/main image.png" class="profile_pic">
+                    <!-- <img src="/images/img 1.jpg" class="profile_p"> -->
+                </div>
+                <p id="intro-text" class="col-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor
+                    incididunt ut labore
+                    et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
             </div>
-            <p id="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore
-                et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
         </div>
         <br>
 
@@ -71,7 +73,7 @@
             <div class="card col-3">
                 <h2 class="card-title ">Cab Trajectory Visualisation</h2>
                 <div class="card-img">
-                    <img src="/images/proj_image.jpg" alt="" height="150" width="300" class="">
+                    <img src="/images/proj_image.jpg" alt="" class="proj_img_main">
                 </div>
                 <p id="proj_brief">
                     Visualization of cab trajectories in Chicago to analyze traffic patterns, helping cab operators
@@ -88,7 +90,7 @@
                 <h2 class="card-title ">Visualization of Crime rate and Unemployment across US</h2>
 
                 <div class="card-img">
-                    <img src="/images/proj2_img.jpg" alt="" height="150" width="300">
+                    <img src="/images/proj2_img.jpg" alt="" class="proj_img_main">
                 </div>
 
                 <p id="proj_brief">
@@ -100,14 +102,13 @@
                 </p>
 
                 <a href="/unempl_proj.html">
-                    <!-- <a href="https://github.com/shreyanshraj/Unemployment-and-Crime-rate-vis"> -->
                     <button type="button" id="proj_btn" class="btn btn-secondary">View project</button>
                 </a>
 
             </div>
 
 
-            <div class="card col-3">
+            <div class="card1 col-3">
                 <h2 class="card-title ">Personality Analysis using Machine Learning</h2>
 
                 <p>Language and libraries used</p>

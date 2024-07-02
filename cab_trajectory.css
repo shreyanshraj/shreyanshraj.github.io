@@ -117,3 +117,40 @@ button:hover {
     font-weight: bold;
     font-size: 1.3em;
 }
+
+#caption {
+    font-size: .75em;
+    text-align: center;
+    margin-top: .4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: .5em;
+}
+
+.radial_pic{
+    height: 40vh;
+    width: 20vw;
+    /* margin-bottom: .5em; */
+}
+
+.leaflet_logo{
+    height: 5vh;
+    width: 15vw;
+    /* scale: .3; */
+    padding-left: .5em;
+    /* margin-top: ; */
+}
+
+.js_logo{
+    height: 5vh;
+    width: 5vh;
+}
+
+.back_arr{
+    height: 2vh;
+    width: 2vw;
+}
+
+#back_nav{
+    width: 5vw;
+    height: 2vh;
+}

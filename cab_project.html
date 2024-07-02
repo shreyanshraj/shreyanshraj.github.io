@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <!-- things to work on or improve 
- 1. add individual graph images next to vis design div
+ 1. add back button to navigate  to main page
  2. add background image or pattern to the whole page-->
 
 <head>
     <meta charset="utf-8">
-    <title>Cab trajectory visualisation | SR</title>
+    <title>Cab trajectory visualisation</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="cab_trajectory.css">
@@ -16,7 +16,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" /> -->
 </head>
 
 <body>
@@ -56,7 +55,8 @@
                     </div>
                     <div>
                         <p class="subtitle">Working of Visualization</p>
-                        <p>Topic Bar Graph<br>
+                        <p>Bar Graph</p>
+                        <p>
                             At the core of our visual analytics tool lies the Topic Bar Graph, meticulously designed to
                             reveal the most frequently
                             traveled roads based on taxi trajectories. Powered by D3.js, this interactive bar chart
@@ -70,7 +70,7 @@
                             operational strategies.
                         </p>
                         <br>
-                        <p>Radial Heat Map and Bar Chart </p>
+                        <p>Radial Heat Map </p>
                         <p>Another essential component, the Radial Heat Map and Bar Chart, visualizes taxi ride
                             characteristics such as speed and
                             duration across different times of the day. Leveraging D3.js's arc functionalities, this
@@ -110,6 +110,28 @@
                     </div>
                     <div class="images of graph">
                         <!-- to add individual images of the graphs -->
+                        <br><br><br><br>
+                        <img src="/images/proj images/common routes.png" alt="">
+                        <!-- <span> -->
+                        <p id="caption">Fig 1: Bar chart showing most common roads</p>
+                        <!-- </span> -->
+
+                        <br>
+                        <div class="radial_pic">
+                            <img src="/images/proj images/radial graph.png" class="radial_pic">
+                            <!-- <span> -->
+                            <p id="caption">Fig 2: Radial heat map</p>
+                            <!-- </span> -->
+
+                        </div>
+                        <br><br>
+                        <div class="radial_pic">
+                            <img src="/images/proj images/map plotting.png" class="radial_pic">
+                            <!-- <span> -->
+                            <p id="caption">Fig 3: Visualization of Cab trajectory</p>
+                            <!-- </span> -->
+
+                        </div>
 
                     </div>
                     <div>
@@ -146,7 +168,7 @@
 
                 <!-- end of Introduction section -->
 
-                <p style="text-decoration: underline;">Links for Dataset used:</p>
+                <!-- <p style="text-decoration: underline;">Links for Dataset used:</p>
                 <ul>
                     <li>
                         <a href="https://www.kaggle.com/datasets/tunguz/us-estimated-crimes" class="links">US Estimated
@@ -160,11 +182,23 @@
                     <li>
                         <a href="https://www2.census.gov/geo/tiger/GENZ2014/shp/" class="links">US Geojson data</a>
                     </li>
-                </ul>
+                </ul> -->
                 <br>
+
                 <div id="api">
                     <p>List of APIs used:</p>
+                    <ul>
+                        <li><a href="https://developers.google.com/maps/documentation/directions">Google Maps Directions
+                                API</a></li>
+                        <li><a href="https://developers.google.com/maps/documentation/javascript">Maps JavaScript
+                                API</a></li>
+                        <li><a href="https://developers.google.com/maps/documentation/geocoding">Geocoding API</a></li>
+                        <li><a href="https://developers.google.com/maps/documentation/distance-matrix">Distance Matrix
+                                API</a></li>
+                        <li><a href="https://leafletjs.com/">LeafletJs Map API</a></li>
+                    </ul>
                 </div>
+
                 <br>
                 <p style="font-size: 0.9em; margin-bottom: .6em;">Language and libraries used:</p>
 
@@ -180,13 +214,16 @@
                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="css-3" srcset=""
                     height="35" width="40" />
 
+                <img src="/images/Leaflet_logo.png" class="leaflet_logo" alt="">
+                <img src="/images/js_logo.png" class="js_logo" alt="">
+
                 <div id="proj_links">
                     <!-- include final vis interaction gif and github link-->
-                    <button type="button" class="">
+                    <!-- <button type="button" class="">
                         <a href="https://github.com/asu-cse578-s2024/Aditya-Dhruv-Omkar-Satya-Shreyansh"
                             style="text-decoration: none; color: black;">View project on
                             Github</a>
-                    </button>
+                    </button> -->
                     <br>
                     <p style="text-decoration: underline; ">Project Demo Video</p>
                     <iframe src="https://www.youtube.com/embed/ns7qlgG7kOY"
@@ -196,12 +233,7 @@
                         style="margin-bottom: 1em;width: 40vw; height: 40vh;" allowfullscreen></iframe>
                 </div>
             </div>
-
-
-
         </div>
-
-
     </div>
 
 </body>
