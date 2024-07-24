@@ -200,3 +200,47 @@ li a{
 }
 
 
+#contact{
+    background-color: rgba(0, 0, 0, 0.164);
+    /* color: white; */
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+#cont_sign{
+    margin-top: 1.6em;
+    font-size: 1.2em;
+    margin-left: 1.5em;
+    color: rgba(0, 0, 0, 0.651);
+}
+
+.cont_pic{
+    /* height: 5vh;
+    width: 10vw; */
+    padding: .5em;
+    margin-top: .5em;
+}
+
+.cont_pic :hover{
+    /* background-color: rgba(120, 213, 241, 0.637); */
+}
+
+.contact_list>li{
+    display: inline-block;
+    text-align: center;
+}
+
+/* .circle_cov{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 1em;
+    width: 1em;
+} */
+ 
+.fa-stack-2x {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    /* z-index: var(--fa-stack-z-index, auto); */
+}

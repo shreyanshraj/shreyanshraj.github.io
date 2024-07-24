@@ -1,23 +1,12 @@
 html{
     background-color: rgb(246, 247, 248);
-    /* padding-left: 1em;
-    padding-right: 1em; */
-    /* background-image: url(/images/background_pattern.jpg); */
-    /* opacity: 0.1; */
 }
 
 #header{
-    /* background-color: black; */
-    /* background-image: url('/images/unempl_image_header.jpg');
-    background-repeat: no-repeat    ;
-    /* opacity: 0.5; */
-    /* height: 43em;
-    width: auto; */
-    /* background-blend-mode: lighten;
-    background-size: cover;  */
+
     height: 100vh;
     margin-bottom: 2em;
-    margin-top: 2em;
+    /* margin-top: 2em; */
     /* background-image: url(/images/background_pattern.jpg);
         opacity: 0.1; */
 }
@@ -47,7 +36,7 @@ html{
     width: 60vw;
     text-align: left;
     margin-left: 15vw;
-    font-size: 1.4em;
+    font-size: 1.2em;
     word-spacing: 0.4em;
     margin-bottom: 2em;
     line-height: 1.3em;
@@ -86,4 +75,19 @@ button:hover{
     border-radius: 3em;
     margin-bottom: 2em;
     
+}
+
+.back_arr {
+    height: 2vh;
+    /* width: 2vw; */
+    /* margin-top: .3em;
+    margin-left: .5em; */
+    padding: 1em;
+}
+
+.back_arr:hover {
+    background-color: rgba(0, 0, 0, 0.171);
+    padding: 1em;
+    transition: .2s;
+    border-radius: 2em;
 }
