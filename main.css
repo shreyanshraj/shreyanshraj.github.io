@@ -59,11 +59,13 @@ li a{
 }
 
 .dk_btn{
-    height: 3em;
-    width: 3em;
+    height: 2em;
+    width: 2em;
     position: absolute;
     top: 0;
     right: 0vw;
+    margin-right: 1vw;
+    margin-top: 2vh;
 }
 
 
@@ -218,8 +220,11 @@ li a{
 .cont_pic{
     /* height: 5vh;
     width: 10vw; */
-    padding: .5em;
+    padding: .7em;
     margin-top: .5em;
+    background-color: rgba(0, 0, 0, 0.105);
+    /* border-radius: 5em; */
+    border-radius: 50%;
 }
 
 .cont_pic :hover{
