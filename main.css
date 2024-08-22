@@ -23,6 +23,21 @@ ul{
     
 }
 
+.js_logo {
+    height: 5vh;
+    width: 5vh;
+}
+
+.hana_logo{
+    height: 10vh;
+    width: 8vw;
+}
+
+#tech_stack{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
 li a{
     float: left;
     /* text-align: right; */
@@ -41,7 +56,9 @@ li a{
     background-color: black;
     height: fit-content;
     margin-top: .5em;
-    margin-left: 10vw;
+    /* position: fixed; */
+    /* margin-left: 10vw; */
+    /* align-items: start; */
     /* border-radius: 1em; */
     /* position: fixed; */
 }
@@ -72,6 +89,20 @@ li a{
 
 #intro {
     background-color: rgba(169, 157, 94, 0.173);
+}
+
+.two_col_lay {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 1em;
+    width: 80vw;
+}
+
+.indi_ele{
+    display: grid;
+    grid-template-columns: min-content auto;
+    column-gap: .8em;
+    
 }
 
 #pro_title,#ts_title{
@@ -147,10 +178,6 @@ li a{
     margin-top: 1.2em;
 }
 
-#proj_btn{
-    margin-bottom: 1em;
-}
-
 .card-img{
     margin-top: 1em;
 }
@@ -166,7 +193,7 @@ li a{
     background-color: rgb(67, 156, 230);
     transition: .3s;
     color: black;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 #intro-back{
@@ -224,11 +251,11 @@ li a{
     margin-top: .5em;
     background-color: rgba(0, 0, 0, 0.105);
     /* border-radius: 5em; */
-    border-radius: 50%;
+    border-radius: 40%;
 }
 
 .cont_pic :hover{
-    /* background-color: rgba(120, 213, 241, 0.637); */
+    background-color: rgba(0, 0, 0, 0.637);
 }
 
 .contact_list>li{
