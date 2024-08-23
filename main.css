@@ -23,19 +23,45 @@ ul{
     
 }
 
-.js_logo {
-    height: 5vh;
-    width: 5vh;
+.logo_and{
+    height: 4em;
+    width: 3.5em;
+    margin-top: .5em;
 }
 
 .hana_logo{
     height: 10vh;
     width: 8vw;
+    margin-left: -1.5em;
+    margin-bottom: 1em;
+    margin-right: -1.2em;
+}
+.logo_d3{
+    margin-top: .3em;
+    height:3em;
+    width: 3em;
+}
+
+.logo_js{
+    margin-top: .3em;
+    height: 4em;
+    width: 4em;
+    margin-left: .5em;
+}
+
+.logo_text{
+    text-align: left;
+    padding-top: .5em;
+    /* line-height: normal;
+    justify-content: left;
+    display: flex;
+    align-items: center; */
 }
 
 #tech_stack{
     margin-left: 1em;
     margin-right: 1em;
+    margin-bottom: 3em;
 }
 
 li a{
@@ -54,7 +80,6 @@ li a{
 #list_nav{
     padding-top: .8em;
     background-color: black;
-    height: fit-content;
     margin-top: .5em;
     /* position: fixed; */
     /* margin-left: 10vw; */
