@@ -26,15 +26,15 @@ ul{
 .logo_and{
     height: 4em;
     width: 3.5em;
-    margin-top: .5em;
+    /* margin-top: .5em; */
 }
 
 .hana_logo{
-    height: 10vh;
-    width: 8vw;
+    height: 3.7em;
+    width: 7.5em;
     margin-left: -1.5em;
     margin-bottom: 1em;
-    margin-right: -1.2em;
+    margin-right: -1.3em;
 }
 .logo_d3{
     margin-top: .3em;
@@ -42,16 +42,24 @@ ul{
     width: 3em;
 }
 
+.logo_ang{
+    margin-left: .5em;
+    height: 4em;
+    width: 3.5em;
+    margin-right: .7em;
+}
+
 .logo_js{
     margin-top: .3em;
-    height: 4em;
-    width: 4em;
-    margin-left: .5em;
+    height: 3em;
+    width: 3em;
+    /* margin-left: .5em; */
 }
 
 .logo_text{
     text-align: left;
-    padding-top: .5em;
+    padding-top: .2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     /* line-height: normal;
     justify-content: left;
     display: flex;
@@ -82,7 +90,9 @@ li a{
     background-color: black;
     margin-top: .5em;
     /* position: fixed; */
-    /* margin-left: 10vw; */
+    /* margin-left: 40vw; */
+    /* margin-right: 2em; */
+    /* width: min-content + 4 ; */
     /* align-items: start; */
     /* border-radius: 1em; */
     /* position: fixed; */
@@ -95,9 +105,29 @@ li a{
 }
 
 .dark-mode {
-    background-color: rgb(56, 54, 54);
+    background-color: rgb(46, 44, 44);
     color: white;
     transition: background .5s;
+
+    .card{
+        background-color: rgb(56, 54, 54);
+    }
+
+        #intro{
+            background-color: rgba(56, 54, 54, 0.851);
+        }
+
+        #project{
+            background-color: rgb(50, 48, 48);
+        }
+
+    /* .card{
+        background-color: rgb(56, 54, 54);
+    } */
+
+    #pro_title, #ts_title, .card-title, #cont_sign{
+        color: white;
+    }
 }
 
 .dk_btn{
